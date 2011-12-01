@@ -8,7 +8,7 @@
 $ npm install belt
 ```
 
-### Example Code (Checkout /tests, same jazz)
+### Example Code
 
 ```javascript
 

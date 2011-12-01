@@ -4,15 +4,7 @@ var assert = require('assert');
 
 var belt = new require('../lib/belt');
 
-vows.describe('general module tests').addBatch({
-  'when instantiating belt':{
-    topic:function(){ 
-      return belt;
-    },
-    'belt should be an object':function(topic) {
-      assert.equal(typeof(topic), 'object');
-    }
-  },
+vows.describe('belt.TypeOf() tests').addBatch({
   'when creating a function and getting typeOf':{
     topic:function(){
       return function(){};
