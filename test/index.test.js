@@ -9,7 +9,7 @@ vows.describe('general module tests').addBatch({
     topic:function(){ 
       return belt;
     },
-    'github3 should be an object':function(topic) {
+    'belt should be an object':function(topic) {
       assert.equal(typeof(topic), 'object');
     }
   }
