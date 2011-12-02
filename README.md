@@ -2,6 +2,8 @@
 
 # Belt - NodeJS Utility (belt) Functions
 
+[![Build Status](https://secure.travis-ci.org/edwardhotchkiss/belt.png)](http://travis-ci.org/edwardhotchkiss/belt)
+
 ### Installation
 
 ```bash
