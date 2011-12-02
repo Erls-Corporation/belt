@@ -5,14 +5,14 @@ var assert = require('assert');
 var belt = new require('../lib/belt');
 
 var testArray = [
-  { name : 'edward', job : 'developer', date : new Date() },
-  { name : 'edward hotchkiss', job : 'developer', date : new Date() },
-  { name : 'edward', job : 'developer', date : new Date() },
-  { name : 'edward', job : 'hacker', date : new Date() },
-  { name : 'edward', job : 'coder', date : new Date() },
-  { name : 'edward', job : 'programmer', date : new Date() },
-  { name : 'edward', job : 'developer', date : new Date() },
-  { name : 'edward', job : 'developer', date : new Date() }
+  { name : 'edward', job : 'developer' },
+  { name : 'edward hotchkiss', job : 'developer' },
+  { name : 'edward', job : 'developer' },
+  { name : 'edward', job : 'hacker' },
+  { name : 'edward', job : 'coder' },
+  { name : 'edward', job : 'programmer' },
+  { name : 'edward', job : 'developer' },
+  { name : 'edward', job : 'developer' }
 ];
 
 vows.describe('belt.unique() tests').addBatch({
@@ -20,8 +20,8 @@ vows.describe('belt.unique() tests').addBatch({
     topic:function(){
       return belt.unique(testArray);
     },
-    'typeOf should be a regexp':function(topic){
-      assert.equal(belt.length, 6 );
+    'belt.objectLength should be 6':function(topic){
+      assert.equal(belt.objectLength(topic), 6);
     }
   }
 }).export(module);
