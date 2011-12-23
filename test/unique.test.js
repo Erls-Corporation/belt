@@ -18,7 +18,8 @@ var testArray = [
 vows.describe('belt.unique() tests').addBatch({
   'when creating a multidimensional array with duplicate objects and using belt.unique(testArray)':{
     topic:function(){
-      return belt.unique(testArray);
+      var arr = belt.unique(testArray);
+      return arr;
     },
     'belt.objectLength should be 6':function(topic){
       assert.equal(belt.objectLength(topic), 6);

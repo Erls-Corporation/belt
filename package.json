@@ -2,7 +2,7 @@
   "author":"Edward Hotchkiss <e@ingk.com>",
   "name":"belt",
   "description":"NodeJS Utility (belt) Functions",
-  "version":"0.0.4",
+  "version":"0.0.5",
   "repository":{
     "type":"git",
     "url":"git://github.com/edwardhotchkiss/belt.git"
@@ -10,13 +10,12 @@
   "keywords":["utility","helper","methods","mixin","clone"],
   "main":"./lib/belt",
   "engines":{
-    "node":">= 0.4.11 < 0.7.0"
+    "node":">= 0.4.11 < 0.8.0"
   },
   "dependencies":{
   },
   "devDependencies":{
-    "vows":"0.5.13",
-    "should":"0.3.2"
+    "vows":"0.5.13"
   },
   "scripts":{
     "test":"vows test/*.test.js --spec"
