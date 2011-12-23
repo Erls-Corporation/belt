@@ -1,8 +1,7 @@
 
-var vows = require('vows');
-var assert = require('assert');
-
-var belt = new require('../lib/belt');
+var vows = require('vows'),
+    assert = require('assert'),
+    belt = new require('../lib/belt');
 
 var testArray = [
   { name : 'edward', job : 'developer' },

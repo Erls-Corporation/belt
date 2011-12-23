@@ -1,8 +1,7 @@
 
-var vows = require('vows');
-var assert = require('assert');
-
-var belt = new require('../lib/belt');
+var vows = require('vows'),
+    assert = require('assert'),
+    belt = new require('../lib/belt');
 
 vows.describe('belt.TypeOf() tests').addBatch({
   'when creating a function and getting typeOf':{
